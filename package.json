@@ -12,6 +12,7 @@
     "major": "npm version major",
     "minor": "npm version minor",
     "patch": "npm version patch",
+    "prebuild": "npm run clean",
     "publish-public": "npm publish --access public",
     "test": "jest"
   },
@@ -31,9 +32,11 @@
   },
   "homepage": "https://github.com/ntt-city/ntt-pod#readme",
   "devDependencies": {
+    "@types/bookshelf": "^0.9.9",
     "@types/immutable": "^3.8.7",
     "@types/jest": "^23.3.9",
     "@types/lodash": "^4.14.117",
+    "@types/mongoose": "^5.2.20",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
     "jest": "^23.6.0",
@@ -41,8 +44,12 @@
     "typescript": "^3.1.6"
   },
   "dependencies": {
-    "immutable": "^4.0.0-rc.12",
-    "lodash": "^4.17.11"
+    "bookshelf": "^0.13.3",
+    "knex": "^0.15.2",
+    "mongoose": "^5.3.6",
+    "ntt-flow": "0.0.12",
+    "sequelize": "^4.41.0",
+    "sequelize-typescript": "^1.0.0-alpha.4"
   },
   "jest": {
     "transform": {
