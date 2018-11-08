@@ -1,0 +1,57 @@
+{
+  "name": "ntt-pod",
+  "version": "0.0.1",
+  "description": "The sequence of initialization, modification, aggregation, or other processes through which a data entity passes from instantiation to persistence.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "major": "npm version major",
+    "minor": "npm version minor",
+    "patch": "npm version patch",
+    "publish-public": "npm publish --access public",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntt-city/ntt-pod.git"
+  },
+  "keywords": [
+    "Entity",
+    "Pod",
+    "Rersistence"
+  ],
+  "author": "Lucas Martínez Oromí",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ntt-city/ntt-pod/issues"
+  },
+  "homepage": "https://github.com/ntt-city/ntt-pod#readme",
+  "devDependencies": {
+    "@types/immutable": "^3.8.7",
+    "@types/jest": "^23.3.9",
+    "@types/lodash": "^4.14.117",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.4",
+    "typescript": "^3.1.6"
+  },
+  "dependencies": {
+    "immutable": "^4.0.0-rc.12",
+    "lodash": "^4.17.11"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testRegex": "^.+\\.spec\\.ts$"
+  }
+}

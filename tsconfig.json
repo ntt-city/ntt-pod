@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "target": "es5",
+        "declaration": true,
+        "outDir": "dist",
+        // "outFile": "dist/index.js",
+        "strict": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "lib": ["esnext", "dom"],
+        "rootDir": "src",
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "importHelpers": true,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": true
+    },
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts",
+        "dist",
+        "scripts",
+        "acceptance-tests",
+        "webpack",
+        "jest",
+        "src/setupTests.ts"
+    ],
+    "typeRoots" : ["./typings", "./node_modules/@types/", "../node_modules/@types/"]
+}
